@@ -1,7 +1,106 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+}
+.body{
+  background: rgb(19, 17, 17);
 }
 
+.App {
+  text-align: center;
+  height: 100vh;
+  background: rgb(19, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display{
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding: 5px;
+  background:#eee;
+  margin-bottom: 20px;
+  color:tomato;
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.panel{
+  width: 400px;
+  background: rgb(70, 70, 70);
+  padding: 40px 20px 10px 20px;
+  border-radius: 10px;
+ 
+}
+.buttons{
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+button{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 5px;
+  border:none;
+  background: black;
+  color: white;
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 28px;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+button.ac{
+  /* margin-right: 50%; */
+}
+
+button.tomato{
+  background: tomato;
+}
+
+button.grey{
+  background: darkgray;
+  color: black;
+}
+button:hover{
+  /* animation-name: btn-hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; */
+  background: rgb(230, 230, 230);
+    color: black;
+}
+button:active{
+  transform: scale(0.95);
+}
+
+/* @keyframes btn-hover{
+
+  100%{
+    background: rgb(248, 247, 247);
+    color: black;
+  }
+} */
+
+button.bg-height{
+  height: 170px;
+  border-radius: 50px;
+  
+}
+
+button.bg-width{
+  width: 170px;
+  border-radius: 50px;
+}
+
+h5{
+  color: tomato;
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 17px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +134,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+small {
+  color: black;
+  font-size: 15px;
 }
